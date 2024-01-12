@@ -22,4 +22,3 @@ response = "Your name has " + str(name_length) + " letters in it! Awesome!"
 print(response.upper())
 
 
-# What is your name is not accpetiing the upper function. Research on this later. 
