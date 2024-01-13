@@ -12,10 +12,12 @@
 
 # Prompt user for input
 
-# day_number = int(input("Day (0-6)? "))
-# if 1 <= day_number <= 5:
-#     print("Go to work")
-# elif day_number == 0 or day_number == 6:
-#     print("Sleep in")
-# else:
-#     print("Invalid input. Please enter a number between 0 and 6.")
+day = int(input('Day (0-6)? ')) 
+day_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+
+if 0 <= day <= 4:
+    print(day_of_week[day])
+    print("Go to work!")
+elif 5 <= day <= 6: 
+    print(day_of_week[day])
+    print("Sleep in")
