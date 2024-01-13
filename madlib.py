@@ -14,5 +14,4 @@
 
 name = input("What is your name? ")
 subject = input("What is your favorite subject? ")
-
-print ('your name is %s and your favorite subject is %s' % (name, subject))
+print("%s's favorite subject in school is %s." % (name, subject))

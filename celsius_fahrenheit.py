@@ -9,14 +9,15 @@ def celsius_to_fahrenheit(celsius):
     fahrenheit = (celsius * 9/5) + 32
     return fahrenheit
 
-# gather the input from the user 
+# gather the input from the user. []
 
-celsius_temperature = float(input("Temperature in celsius?"))
+celsius_temperature = float(input("Temperature in Celsisus? "))
 
 # create the conversion from celsius to fahrenheit 
 
 fahrenheit_temperature = celsius_to_fahrenheit(celsius_temperature)
 
+print(" {} C is equal to {} F".format(celsius_temperature, fahrenheit_temperature))
 
 
 
@@ -27,4 +28,4 @@ fahrenheit_temperature = celsius_to_fahrenheit(celsius_temperature)
 
 # $ python3 degree_conversion.py
 # Temperature in C? -5
-# 23 F
+# 23 F   ter

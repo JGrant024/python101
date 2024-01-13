@@ -1,4 +1,4 @@
-# 4.) Day of ther Week 
+# 4.) Day of the Week 
 
 # Given the following code that prompts the user for a day number
 #  (Remember that the int function converts a numeric string to a
@@ -19,23 +19,13 @@
 # Day (0-6)? 0
 # Sunday
 
-day = int(input('Day (0-6)? '))
+# here we declare our variables using the given format and placing days of the week in a list that can be indexed. 
+day = int(input("day(0-6)?"))
+day_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
-week_day = ''
+# created a if else statement for collet inputs between 0-6 
 
-if day == 0:
-  week_day = 'Sunday'
-if day == 1:
-  week_day = 'Monday'
-if day == 2:
-  week_day = 'Tuesday'
-if day == 3:
-  week_day = 'Wednesday'
-if day == 4:
-  week_day = 'Thursday'
-if day == 5:
-  week_day = 'Friday'
-if day == 6:
-  week_day = 'Saturday'
-
-print(week_day)
+if 0 <= day <= 6: 
+    print(day_of_week[day])
+else:
+    print("Oops! Please enter a number between 0 and 6.")

@@ -9,16 +9,12 @@
 
 
 
+name = input("What is your name? ")
+name_uppercase = name.upper() 
+expression = "your name has 5 letters in it! awesome!"
+expression_uppercase = expression.upper()
+print("HELLO, " + name_uppercase + "!") 
+print(expression_uppercase)
 
-
-question = input("What is your name? ")
-uppercase_name = question.upper()
-
-greeting = "Hello, " + uppercase_name + "!"
-print(greeting)
-
-name_length = len(question)
-response = "Your name has " + str(name_length) + " letters in it! Awesome!"
-print(response.upper())
 
 
