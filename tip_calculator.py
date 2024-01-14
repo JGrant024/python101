@@ -32,15 +32,28 @@
 # Remember that you need to convert the input from the user input to floats instead of ints. Use the float function instead of the int function.
 # To format a float number as a dollar value, use Python's formatting syntax: "%.2f" % amount
 
+tip_percentage = " "
+good = 20
+fair = 15 
+bad = 10
+
+total_bill = float(input("Total bill amount? "))
+level_of_service = input("Level of service? ") .lower() 
+
+if level_of_service == "good": 
+    tip_percentage = good 
+elif level_of_service == "fair": 
+    tip_percentage = fair 
+elif level_of_service == "bad": 
+    tip_percentage = bad 
+else: 
+    print("Opps! Invalid service level. Please enter good, fair, or bad.")
+    exit() 
+
+tip_amount = total_bill * (tip_percentage / 100) 
+total_amount = total_bill + tip_amount
+
+print(f"Tip amount: ${tip_amount:.2f}")
+print(f"Total amount: ${total_amount:.2f}")
 
 
-
-
-
-def count_tip(tip_amount, bill): 
-    tip = bill * tip_amount
-    total = bill + tip 
-    return total
-
-print(count_tip(.2, 100))
- 

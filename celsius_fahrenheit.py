@@ -5,19 +5,14 @@
 # F = (C * 9/5) + 32
  
 
-def celsius_to_fahrenheit(celsius):
-    fahrenheit = (celsius * 9/5) + 32
-    return fahrenheit
+#create a variable with the value of an interger(nunber) along with the input of the deg in celsius 
 
-# gather the input from the user. []
+temperature_in_celsius = int(input("Temperature in C? ")) 
+# using the formula from above I solved the equaiton of 9/5 plus 32
+temperature_in_fahrenheit = (temperature_in_celsius * 1.8) + 32
 
-celsius_temperature = float(input("Temperature in Celsisus? "))
-
-# create the conversion from celsius to fahrenheit 
-
-fahrenheit_temperature = celsius_to_fahrenheit(celsius_temperature)
-
-print(" {} C is equal to {} F".format(celsius_temperature, fahrenheit_temperature))
+print(temperature_in_fahrenheit)
+# this will then print the coversion into fahrenheit 
 
 
 
