@@ -10,3 +10,10 @@
 # 6
 # 7
 # 8
+
+i = 2
+while 2 < 8: 
+    print(i)
+    if (i == 8): 
+        break
+    i += 1 
